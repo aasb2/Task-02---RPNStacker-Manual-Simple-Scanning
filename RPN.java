@@ -49,7 +49,8 @@ public class RPN{
             if(t.type!=TokenType.NUM){
                 num1 = stack.pop();
                 num2 = stack.pop();
-                stack.push(operation(num1,t,num2));
+                stack.push(operation(num2,t,num1));
+                
             }
             else
                 stack.push(t);
